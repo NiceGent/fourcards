@@ -75,7 +75,6 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 40px 0;
-    height: 80vh;
 }
 
 section {
@@ -157,7 +156,6 @@ span {
     
     body {
         max-width: 500px;
-        max-height: 100vh;
     }
 
     .container {
