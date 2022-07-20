@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  display: border-box;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+}
+
+img {
+    max-width: 100px;
+}
+
+/* Typography */
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0px;
+    line-height: 1;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+/* Layout */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    order: 1;
+    padding: 20px;
+    display: block;
+}
+
+header h2 {
+    order: 0;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+header p {
+    order: 3;
+    text-align: center;
+    line-height: 1.5;
+}
+
+header h1,
+header h2,
+header p {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+main {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+section {
+    display: flex;
+    max-width: 25%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.card {
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card-one {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card-two {
+    margin-bottom: 70px;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card-three {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card-four {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card h3,
+.card p {
+    display: block;
+    max-width: 100%;
+    line-height: 1.5;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #143774;
+    text-align: center;
+}
+
+.attribution {
+    display: inline-block;
+    padding: 25px 0;
+}
+
+a {
+    color: hsl(0, 0%, 98%);
+}
+
+a:hover,
+a:focus {
+    color: orange;
+}
+
+span {
+    display: block;
+}
+
+@media (max-width: 500px) {
+
+    span {
+        display: inline;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    main  {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 25px;
+    }
+
+
+}
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
