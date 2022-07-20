@@ -8,7 +8,6 @@
 body {
     margin: 0;
     background-color: hsl(0, 0%, 98%);
-    height: 100vh;
 }
 
 img {
@@ -76,6 +75,7 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 40px 0;
+    height: 80vh;
 }
 
 section {
@@ -151,6 +151,19 @@ span {
 
 @media (max-width: 500px) {
 
+    * {
+        box-sizing: border-box; 
+    }
+    
+    body {
+        max-width: 500px;
+        max-height: 100vh;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+    
     span {
         display: inline;
     }
@@ -161,6 +174,7 @@ span {
 
     header {
         margin-bottom: 30px;
+        max-width: 90%;
     }
 
     main  {
@@ -169,9 +183,6 @@ span {
         padding: 0;
     }
 
-    .container {
-        max-width: 90%;
-    }
 
     section {
         max-width: 100%;
@@ -181,7 +192,12 @@ span {
         margin-bottom: 25px;
     }
 
-
+    header h1,
+    header h2 {
+        padding: 0 0 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 
